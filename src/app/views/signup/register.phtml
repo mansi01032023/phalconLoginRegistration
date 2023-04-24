@@ -1,0 +1,6 @@
+<!-- frontend for checking whether or not the user exists -->
+<div class="alert alert-<?php echo $success === true ? 'success' : 'danger'; ?>">
+    <?php echo $message; ?>
+</div>
+
+<?php echo $this->tag->linkTo(['login', 'Login', 'class' => 'btn btn-primary']); ?>

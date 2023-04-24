@@ -1,0 +1,8 @@
+<?php
+// displaying the dashboard page
+echo $date;
+echo "<br>";
+echo $this->tag->linkTo(
+    'login/logout',
+    $this->tag->submitButton(["Logout", "class" => "btn-danger"])
+);

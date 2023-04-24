@@ -1,0 +1,17 @@
+<?php
+// this page is displaying the first page of the app
+echo "<h1>Hello World</h1>";
+
+echo PHP_EOL;
+echo "<span>";
+echo $this->tag->linkTo(
+    'signup',
+    $this->tag->submitButton(["Register", "class" => "btn-info"])
+);
+echo "</span>";
+echo "<span>";
+echo $this->tag->linkTo(
+    'login',
+    $this->tag->submitButton(["Login", "class" => "btn-success"])
+);
+echo "</span>";
